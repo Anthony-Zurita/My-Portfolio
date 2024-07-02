@@ -1,0 +1,61 @@
+/* importing google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+/* Link to YT Video on How To Add Nav-Link Underline on Hover Effect: https://www.youtube.com/watch?v=wh1FKjZt_H8&ab_channel=ByteGrad */
+
+/*
+  To style the nav-links in general
+   --- relative - used to make the ::after pseudo element relative to the nav-link
+   --- font-semibold - used to make the text semi-bold
+   --- text-white - used to make the text white
+   --- cursor-pointer - used to make the cursor a pointer when hovering over the nav-link
+   --- text-[17px] - used to set the font size to 17px
+   --- w-fit - used to make the width of the nav-link fit the content
+*/
+
+.nav-link{
+  @apply relative font-semibold text-white cursor-pointer text-[17px] w-fit;
+}
+
+/*
+  To implement the underline effect on hover we need to create a pseudo element using the ::after selector
+   --- height: 2px; - this is the height of the underline
+   --- width: 100%; - this is the width of the underline, set to 100% to span the entire width of the nav link
+   --- background-color: yellow; - this is the color of the underline
+   --- position: absolute; - used to not take up any space that could make the nav-link push up
+   --- left: 0; - this is the how far from the left the underline will start, we use 0 to start where the nav-link starts and use its relative position
+   --- bottom: -5px; - this is how far from the bottom the underline will start
+   --- opacity: 0; - this is used to hide the underline by default
+   --- transition: all 0.2s - this is used to make the underline appear smoothly onto the screen instead of instant
+   --- pointer-events: none; - this is used to make the underline not hoverable to avoid the animation from flickering and only appear when the nav-link is hovered
+*/
+
+.nav-link::after{
+  content: '';
+  height: 4px;
+  width: 100%;
+  background-color: yellow;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  opacity: 0;
+  transition: all 0.4s;
+  pointer-events: none;
+}
+
+/*
+  To make the underline appear when the nav-link is hovered we use use ::hover::after and also ::focus::after to 
+  keep the underline when the nav-link is clicked
+   --- opacity: 1; - this is used to make the underline appear when the nav-link is hovered
+*/
+
+.nav-link:hover::after{
+  opacity: 1;
+}
