@@ -59,3 +59,8 @@
 .nav-link:hover::after{
   opacity: 1;
 }
+
+
+.heading{
+  @apply text-center text-white text-[28px] sm:text-[33px] md:text-[45px] font-bold uppercase;
+}

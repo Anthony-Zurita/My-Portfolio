@@ -1,6 +1,7 @@
 import About from "@/Components/About";
-import Greeting from "@/Components/Greeting";
+import Home from "@/Components/Home";
 import Nav from "@/Components/Nav";
+import Skills from "@/Components/Skills";
 import React from "react";
 
 /*
@@ -15,10 +16,12 @@ const HomePage = () => {
       {/* Narbar component section */}
       <Nav />
       {/* Gretting component section */}
-      <Greeting />
+      <Home />
       <div>
         {/* About section */}
         <About />
+        {/* Skills section */}
+        <Skills />
       </div>
     </div>
     

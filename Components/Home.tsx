@@ -1,7 +1,7 @@
 import React from "react";
 import TypingAnimation from "./TypingAnimation";
 import Image from "next/image";
-import { ArrowDownTrayIcon } from "@heroicons/react/16/solid";
+import { ArrowDownTrayIcon } from "@heroicons/react/24/solid";
 
 /*
 The hello components is a a component that goes under the navbar. It is a component that will have a background image 
@@ -14,6 +14,7 @@ with a text animation changing with adding on coder, web developer, mobile app d
   --- h-[88vh] to make the height of the component 88% of the screen height,
   --- bg-[url('/images/green-background.jpg')] to give the component a background image green-background.jpg from the images folder,
   --- bg-cover to make the background image cover the whole component,
+  --- mt-[12vh] to make the margin top 12% of the screen height,
   --- and bg-center to make the background image center inside the component.
 */
 
@@ -104,9 +105,9 @@ with a text animation changing with adding on coder, web developer, mobile app d
   --- className="object-cover rounded-full" to make the image cover the whole div tag and make it a circle.
 */
 
-const Greeting = () => {
+const Home = () => {
   return (
-    <div className="h-[88vh] bg-[url('/images/green-background.jpg')] bg-cover bg-center">
+    <div className="h-[88vh] bg-[url('/images/green-background.jpg')] mt-[12vh] bg-cover bg-center">
       <div className="w-[80%] grid-cols-1 mx-auto grid lg:grid-cols-2 gap-[3rem] h-[100%] items-center">
         <div>
           <h1 className="text-[35px] md:text-[50px] text-white font-bold ">
@@ -139,4 +140,4 @@ const Greeting = () => {
   );
 };
 
-export default Greeting;
+export default Home;

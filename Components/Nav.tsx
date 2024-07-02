@@ -4,8 +4,9 @@ const Nav = () => {
 
 /* 
 The first div the whole component is wrapped in has the following classes:
-
  --- class name w-[100%] to make the width of the component 100% of the screen, 
+ --- fixed to make the nav bar component fixed to the screen,
+ --- z-[10000] to make the z-index of the component 10000,
  --- top-0 to make the component stick to the top of the screen, 
  --- h-[12vh] to make the height of the component 12% of the screen height, 
  --- bg-lime-700 to give the component a background color of lime-700, 
@@ -35,7 +36,7 @@ Note: the <span> tag is used to style the letter Z in the AZ text. It gives cont
 while keeping AZ as a single text.
 */
 
-    return (<div className="w-[100%] top-0 h-[12vh] bg-green-600 shadow-md">
+    return (<div className="w-[100%] fixed z-[10000] top-0 h-[12vh] bg-green-600 shadow-md">
         <div className="flex items-center justify-between w-[80%] mx-auto h-[100%]">
             <h1 className= "flex-[0.6] cursor-pointer text-[25px] text-white font-bold ">
                 ANTHONY
