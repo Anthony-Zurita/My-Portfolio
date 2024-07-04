@@ -91,6 +91,7 @@ import Image from "next/image";
     --- w-[100%] to make the width of the image tag 100%,
     --- h-[100%] to make the height of the image tag 100%,
     --- object-contain to make the image fit inside the div tag.
+    --- layout="fill" to make the image fill the div tag.
 */
 
 const About = () => {
@@ -108,7 +109,7 @@ const About = () => {
             <span className="w-[100px] hidden md:block h-[5px] bg-slate-400 rounded-sm"></span>
             <p className="text-[19px] text-slate-300 w-[80%]">
               This is a description about me I go to UF. I study comp sci blah
-              blah blah. I am a software engineer. I am a mobile app.
+              blah blah. I am a software engineer. I am a mobile app. YEAH
             </p>
           </div>
           <button

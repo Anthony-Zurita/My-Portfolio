@@ -41,24 +41,28 @@ import React from "react";
     --- and text-white to make the text color white.
 */
 
-
 interface Props {
   title: string;
   year: string;
 }
 
-const SkillsItem = ({ title, year }: Props) => {
+const SkillsItemWebDev = ({ title, year }: Props) => {
   return (
     <div className="mb-[4rem] md:mb-[8rem]">
       <span className="px-[2rem] text-[#55e6a5] py-[0.9rem] font-bold text-[18px] border-[2px] border-[#55e6a5]">
         {year}
       </span>
-      <h1 className="mt-[2rem] uppercase font-semibold mb-[1rem] text-[20px] sm:text-[25px] md:text-[30px] text-white">{title}</h1>
+      <h1 className="mt-[2rem] uppercase font-semibold mb-[1rem] text-[20px] sm:text-[25px] md:text-[30px] text-white">
+        {title}
+      </h1>
       <p className="text-slate-300 w-[80%]">
-        This is a description of the things I have learned in the year {year} while learning {title}.
+        I have picked up web development thru an internship at Synergy Tech and
+        working on a side project with my friends. At Synergy Tech I have been
+        learning React and Typescript thru projects. While with my friends, I
+        have been buiding an app to
       </p>
     </div>
   );
 };
 
-export default SkillsItem;
+export default SkillsItemWebDev;

@@ -1,7 +1,7 @@
 import About from "@/Components/About";
 import Home from "@/Components/Home";
 import Nav from "@/Components/Nav";
-import Skills from "@/Components/Skills";
+import SkillsEducation from "@/Components/SkillsEducation";
 import React from "react";
 
 /*
@@ -21,7 +21,7 @@ const HomePage = () => {
         {/* About section */}
         <About />
         {/* Skills section */}
-        <Skills />
+        <SkillsEducation />
       </div>
     </div>
     

@@ -114,7 +114,7 @@ const Home = () => {
             HI, I&apos;M <span className="text-yellow-400 ">ANTHONY!</span>
           </h1>
           <TypingAnimation />
-          <p className="mt-[1.5rem] text-[18px] text-[#ffffff92]">
+          <p className="mt-[1.5rem] text-[18px] text-white">
             Here is a description of what I do. I am a web developer, mobile app
             developer, and a coder. I am a blah blah. I am a blah blah. I make
             cool stuff. Here I am making a personal portfolio.

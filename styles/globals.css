@@ -60,6 +60,16 @@
   opacity: 1;
 }
 
+/*
+  The heading class is used to style any headings throught the protfolio page
+   --- text-center - used to center the text
+   --- text-white - used to make the text white
+   --- text-[28px] - used to set the font size to 28px
+   --- sm:text-[33px] - used to set the font size to 33px on small screens
+   --- md:text-[45px] - used to set the font size to 45px on medium screens
+   --- font-bold - used to make the text bold
+   --- uppercase - used to make the text uppercase
+*/
 
 .heading{
   @apply text-center text-white text-[28px] sm:text-[33px] md:text-[45px] font-bold uppercase;
