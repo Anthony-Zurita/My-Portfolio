@@ -1,8 +1,9 @@
 import React from "react";
 import SkillsItemMobileApp from "./SkillsItemMobileApp";
-import SkillsLanguage from "./SkillsLanguage";
+import SkillsLanguageBar from "./SkillsLanguageBar";
 import Image from "next/image";
 import SkillsItemWebDev from "./SkillsItemWebDev";
+import SkillsItemFiller from "./SkillsItemFiller";
 
 /*
     This is the Skills component. This component is used to display the my education and skills on the portfolio website.
@@ -39,9 +40,10 @@ import SkillsItemWebDev from "./SkillsItemWebDev";
 const SkillsEducation = () => {
   return (
     <div className="pt-[4rem] md:pt-[8rem] pb-[5rem] bg-slate-900">
-
       <h1 className="heading">Education & Skills</h1>
-      <div className="w-[80%] mx-auto pt-[3rem] md:pt-[6rem] grid grid-cols-[25%_75%] items-center">
+
+      <div className="w-[80%] mx-auto pt-[3rem] md:pt-[6rem] grid grid-cols-[25%_5%_70%] items-center">
+        {/* First column, Image and Green backdrop */}
         <div className="lg:w-[250px] mx-auto md:mx-0 mt-[2rem] lg:mt-0 lg:h-[250px] w-[150px] h-[150px] relative">
           <Image
             src="/images/UF_picture.jpg"
@@ -52,41 +54,44 @@ const SkillsEducation = () => {
           />
           <div className="absolute w-[100%] h-[100%] z-[10] bg-[#55e6a5] top-[-2rem] right-[-2rem]"></div>
         </div>
-
-        <div className="flex items-center">
-          <span className="w-[150px] hidden md:block h-[5px] bg-slate-400 rounded-sm"></span>
-          <p className="text-white pl-[1.75rem] lg:pl-[3.5rem] text-[19px]">
-            Pursuing a B.S. degree in Computer Science at the College of Herbet
-            Wertheim College of Engineering at the University of Florida.
-            Additionally, I am pursuing an AI Fundamentals and Applications
-            certificate. I have an expected graduation date of May 2026.
-          </p>
+        {/* Second column, Hyphen */}
+        <div className="flex justify-center md:justify-start">
+          <div className="w-[100px] md:w-[75px] h-[5px] bg-slate-400 rounded-sm"></div>
         </div>
+
+        {/* Third column, Text description */}
+        <p className="text-white pl-[1.75rem] lg:pl-[3.5rem] text-[19px]">
+          Pursuing a B.S. degree in Computer Science at the College of Herbet
+          Wertheim College of Engineering at the University of Florida.
+          Additionally, I am pursuing an AI Fundamentals and Applications
+          certificate. I have an expected graduation date of May 2026.
+        </p>
       </div>
 
       <div className="w-[80%] mx-auto pt-[4rem] md:pt-[8rem] grid grid-cols-1 md:grid-cols-2 gap-[2rem] items-center">
         <div>
-          <SkillsItemMobileApp title="mobile app developer" year="2023 - 2024"/>
-          <SkillsItemWebDev title="Filler Developer" year="2025 - 2026" />
-          <SkillsLanguage
-            skill1="html"
-            skill2="css"
-            skill3="javascript"
-            level1="w-[91%]"
-            level2="w-[88%]"
-            level3="w-[80%]"
+          <SkillsItemMobileApp
+            title="mobile app developer" year="2023 - 2024"/>
+          <SkillsItemFiller title="Filler Developer" year="20XX - 20XX" />
+          <SkillsLanguageBar
+            skill1="React"
+            skill2="Typescript"
+            skill3="TailwindCSS"
+            level1="70"
+            level2="75"
+            level3="65"
           />
         </div>
         <div>
           <SkillsItemWebDev title="Web App Developer" year="Summer 2024" />
-          <SkillsItemWebDev title="Filler Developer" year="2025 - 2026" />
-          <SkillsLanguage
-            skill1="ReactJS"
-            skill2="css"
-            skill3="tailwindcss"
-            level1="w-[96%]"
-            level2="w-[85%]"
-            level3="w-[74%]"
+          <SkillsItemFiller title="Filler Developer" year="20XX - 20XX" />
+          <SkillsLanguageBar
+            skill1="Kotlin"
+            skill2="C++"
+            skill3="Python"
+            level1="85"
+            level2="80"
+            level3="75"
           />
         </div>
       </div>

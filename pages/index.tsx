@@ -1,6 +1,8 @@
 import About from "@/Components/About";
+import Contact from "@/Components/Contact";
 import Home from "@/Components/Home";
 import Nav from "@/Components/Nav";
+import Project from "@/Components/Projects";
 import SkillsEducation from "@/Components/SkillsEducation";
 import React from "react";
 
@@ -22,6 +24,10 @@ const HomePage = () => {
         <About />
         {/* Skills section */}
         <SkillsEducation />
+        {/* Projects section */}
+        <Project/>
+        {/* Contact section */}
+        <Contact />
       </div>
     </div>
     
