@@ -107,11 +107,11 @@ with a text animation changing with adding on coder, web developer, mobile app d
 
 const Home = () => {
   return (
-    <div className="h-[88vh] bg-[url('/images/green-background.jpg')] mt-[12vh] bg-cover bg-center">
+    <div id="home" className="h-[88vh] bg-[url('/images/green-background.jpg')] mt-[12vh] bg-cover bg-center">
       <div className="w-[80%] grid-cols-1 mx-auto grid lg:grid-cols-2 gap-[3rem] h-[100%] items-center">
         <div>
           <h1 className="text-[35px] md:text-[50px] text-white font-bold ">
-            HI, I&apos;M <span className="text-yellow-400 ">ANTHONY!</span>
+            HI, I&apos;M <span className="text-gray-800 ">ANTHONY!</span>
           </h1>
           <TypingAnimation />
           <p className="mt-[1.5rem] text-[18px] text-white">
@@ -120,11 +120,15 @@ const Home = () => {
             cool stuff. Here I am making a personal portfolio.
           </p>
           <div className="mt-[2rem] flex-col space-y-6 sm:space-y-0 sm:flex-row items-center sm:space-x-6">
+
+          <a href="/downloads/AnthonyZurita_Resume_Template2024.pdf" download="AnthonyZurita_Resume_Template2024.pdf">
             <button className="px-[2rem] hover:bg-yellow-400 transition-all duration-200 py-[1rem] text-[18px] font-bold 
             uppercase bg-[#55e6a5] text-black flex items-center space-x-2">
               <p>Dowload CV</p>
               <ArrowDownTrayIcon className="w-[1.6rem] h-[1.7rem] text-black" />
             </button>
+            </a>
+            
           </div>
         </div>
         <div className="w-[500px] hidden bg-[#55e6a5] relative lg:flex items-center rounded-full h-[500px]">

@@ -1,5 +1,9 @@
 import React from "react";
 
+import { Link } from "react-scroll";
+
+// https://www.npmjs.com/package/react-scroll link to react-scroll documentation
+
 const Nav = () => {
 
 /* 
@@ -36,16 +40,16 @@ Note: the <span> tag is used to style the letter Z in the AZ text. It gives cont
 while keeping AZ as a single text.
 */
 
-    return (<div className="w-[100%] fixed z-[10000] top-0 h-[12vh] bg-green-600 shadow-md">
+    return (<div className="w-[100%] fixed z-[10000] top-0 h-[12vh] bg-[#55e6a5] shadow-md">
         <div className="flex items-center justify-between w-[80%] mx-auto h-[100%]">
             <h1 className= "flex-[0.6] cursor-pointer text-[25px] text-white font-bold ">
                 ANTHONY
-                <span className="text-yellow-300">ZURITA</span>
+                <span className="text-gray-800">ZURITA</span>
             </h1>
-            <div className= "nav-link">HOME</div>
-            <div className= "nav-link">ABOUT</div>
-            <div className= "nav-link">PROJECTS</div>
-            <div className= "nav-link">CONTACT</div>
+            <Link className= "nav-link" to="home" smooth={true} duration={500}>HOME</Link>
+            <Link className= "nav-link" to="about" smooth={true} duration={500}> ABOUT</Link>
+            <Link className= "nav-link" to="projects" smooth={true} duration={500}>PROJECTS</Link>
+            <Link className= "nav-link" to="contact" smooth={true} duration={500}>CONTACT</Link>
         </div>
     </div>
 );
